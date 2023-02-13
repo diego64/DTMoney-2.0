@@ -1,4 +1,4 @@
-import { Children, createContext, ReactNode, useEffect, useState } from "react";
+import { createContext, ReactNode, useEffect, useState } from "react";
 
 interface Transaction {
   id: number;
@@ -10,11 +10,11 @@ interface Transaction {
 }
 
 interface TransactionContextType {
-  transactions: Transaction[]
+  transactions: Transaction[];
 };
 
 interface TransactionProviderProps {
-  children: ReactNode
+  children: ReactNode;
 };
 
 export const TransactionsContext = createContext({} as TransactionContextType);
